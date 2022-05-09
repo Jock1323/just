@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media only screen and (max-width:768px){
+            label{
+                width: 100%;
+            }
+            .times{
+                display: none;
+            }
+            .nav__list{
+                transform: translateX(-100%);
+            }
+            input:checked~.bars{
+                display: none;
+            }
+            input:checked~.times{
+                display:inline;
+            }
+            input:checked~.nav__list{
+                transform: translateX(0);
+            }
+            input{
+                outline: none;
+            }
+        }
+         @media only screen and (min-width:768px){
+            .nav__list{
+                position: static;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <header class="h-hf relative w-full" id="top">
+        <img src="../rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg" class="absolute w-full h-full -z-10" alt="paris">
+        <nav class="nav w-11/12 mx-auto px-5 md:flex justify-between items-center relative md:py-5">
+            <a href="#" class="logo uppercase text-slate-100 font-sans font-bold text-xl md:pt-5">Logo</a>
+           <label>
+            <input type="checkbox" class="xs:opacity-0  md:hidden">
+            <span class="bars absolute text-xl right-5 top-0 md:hidden text-slate-100"><i class="fa-solid fa-bars"></i></span>
+            <span class="times absolute text-xl right-5 top-0 md:hidden text-slate-100"><i class="fa-solid fa-xmark"></i></span>
+            <ul class="nav__list xs:fixed md:static bg-slate-400 xs:w-full left-0 top-7 transition-all xs:py-5 md:flex items-center md:bg-transparent">
+                <li class="nav__item xs:text-center mt-5 mr-5"><a href="#" class="nav__link hover:text-gray-800  text-xl font-sans font-semibold text-slate-100">Home</a></li>
+                <li class="nav__item xs:text-center mt-5 mr-5"><a href="#" class="nav__link  hover:text-gray-800 text-xl font-sans font-semibold text-slate-100">Blog</a></li>
+                <li class="nav__item xs:text-center mt-5 mr-5"><a href="#" class="nav__link hover:text-gray-800  text-xl font-sans font-semibold text-slate-100">Contact</a></li>
+                <li class="nav__item xs:text-center mt-5 mr-5"><a href="#" class="nav__link hover:text-gray-800  text-xl font-sans font-semibold text-slate-100">Pricing</a></li>
+            </ul>
+           </label>
+        </nav>
+        <h1 class="text-center text-white font-bold uppercase pt-28 text-4xl">welcome to paris</h1>
+        <p class="text-center text-white text-xl mt-5">See our historical monuments</p>
+        <a href="#down" class="animate-bounce w-12 h-12 hover:animate-ping rounded-full mt-56 flex items-center justify-center mx-auto bg-white"><i class="fa-solid fa-arrow-down fa-2x"></i></a>
+       </header>
+       <div class="section  h-vh  flex relative bg-slate-500" id="down">
+        <div class="div w-11/12 mx-auto mt-6">
+          <div class="mx-auto w-11/12 absolute left-0 text-center text-stone-200 text-6xl">
+              Welcome to our website
+          </div>
+          <div class="part_one mx-auto  flex absolute left-0  h-img2 top-32">
+              <img class="mx-auto" src="../img/paris-pictures-1.jpg" alt="">
+              <div class=" w-5/12 mx-auto align-center text-4xl text-stone-200 pl-0">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ducimus provident vitae eveniet beatae vero nihil magni, facilis sequi necessitatibus. Cupiditate amet praesentium.
+                <div class="btn text-center bg-stone-200 text-slate-500 w-5/6 mx-auto border-solid border-2 border-0 rounded-2xl  pt-2 pb-4 pl-4 pr-4 mt-2 hover:text-white hover:bg-slate-500 ml-5" ><a href="#">Click here</a></div>
+              </div>
+             
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <section class="bg-slate-500 py-16">
+        <div class="mx-auto w-5/6 flex justify-between">
+            <div class="w-96">
+                <h2 class="font-bold text-2xl">Education</h2>
+                <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam the elementum. Urna, posuere nisi sit gravid.</p>
+                <h2 class="font-bold text-2xl">Follow Us</h2>
+                <div class="flex mt-5">
+                    <img class="bg-slate-50 px-4 py-3 rounded-md" src="../img/face.svg" alt="">
+                    <img class="bg-slate-50 px-4 py-3 rounded-md mx-3" src="../img/insta.svg" alt="">
+                    <img class="bg-slate-50 px-4 py-3 rounded-md mr-3" src="../img/twit.svg" alt="">
+                    <img class="bg-slate-50 px-4 py-3 rounded-md" src="../img/in.svg" alt="">
+                </div>
+            </div>
+            <div  class="">
+                <h2 class="font-bold text-2xl mb-6">Feature Links</h2>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>About Us</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Graduation</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Scholarship</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Admissions</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>International</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Events</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-bold text-2xl mb-6">Support</h2>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Language</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>WordPress</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Privacy</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Privacy</p>
+                </div>
+                <div class="flex items-center mt-3">
+                    <i class="fas fa-chevron-left text-blue-800 mr-1"></i>
+                    <p>Support</p>
+                </div>
+            </div>
+            <div class="">
+                <h2 class="font-bold text-2xl mb-6">Contact Us</h2>
+                <p>230,Mirpur Area, Mirpur 10, <br> Dhaka,Bangladesh</p>
+                <div class="flex mt-5">
+                    <img class="mr-2"  src="../img/phone.svg" alt="a phone image">
+                    <a href="tel:+998(90) 222 21 22">+017 4845 7269</a>
+                </div>
+                <div class="flex my-3">
+                    <img class="mr-2" src="../img/mail.svg" alt="a phone image">
+                    <a href="#">info@gmail.com</a>
+                </div>
+                <div class="flex">
+                    <img class="mr-2" src="../img/glob.svg" alt="a phone image">
+                    <a href="#">www.yourdomain.com</a>
+                </div>
+            </div>
+            <a href="#top" class="w-12 h-12 bg-white flex items-center justify-center rounded-full fixed bottom-10 right-10">
+                <i class="fa-solid fa-arrow-up animate-bounce fa-2x"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
